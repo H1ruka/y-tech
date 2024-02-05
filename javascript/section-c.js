@@ -31,7 +31,7 @@ window.addEventListener('scroll', function() {
     const screenWidth = window.innerWidth;
 
 
-    if(scrolly >= 1000 && screenWidth <= 430) {
+    if(scrolly >= 1000 && screenWidth <= 1100) {
         vertical_line.style.height = '820px'
         vertical_line.style.transition = 'all 8s'
         h31.style.opacity = '1'
@@ -82,7 +82,7 @@ window.addEventListener('scroll', function() {
         h47.style.transition = 'all 1s 5.8s'
     }
 
-    if(scrolly >= 1200 && screenWidth > 430) {
+    if(scrolly >= 1200 && screenWidth > 1100) {
         vertical_line.style.width = '1120px'
         vertical_line.style.transition = 'all 8s'
         h31.style.opacity = '1'
