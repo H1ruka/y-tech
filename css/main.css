@@ -619,6 +619,11 @@ body {
       justify-content: space-between; }
       .section-f .wrap a {
         font-size: 25px; }
+      .section-f .wrap .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1.5rem; }
   @keyframes down {
     from {
       transform: translateY(-500px); }
