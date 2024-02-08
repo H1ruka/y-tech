@@ -3,6 +3,31 @@
   margin: auto;
   overflow-x: hidden; }
 
+@font-face {
+  font-family: 'Aquire';
+  /* Use the actual font name */
+  src: url("../aquire-font/Aquire-BW0ox.otf") format("opentype");
+  font-weight: normal;
+  /* Specify the weight for the normal style */ }
+
+@font-face {
+  font-family: 'Aquire';
+  /* Use the actual font name */
+  src: url("../aquire-font/AquireBold-8Ma60.otf") format("opentype");
+  font-weight: bold;
+  /* Specify the weight for the bold style */ }
+
+@font-face {
+  font-family: 'Aquire';
+  /* Use the actual font name */
+  src: url("../aquire-font/AquireLight-YzE0o.otf") format("opentype");
+  font-weight: lighter;
+  /* Specify the weight for the light style */ }
+
+h1, h2, h3 {
+  font-family: 'Aquire', sans-serif !important;
+  font-weight: lighter !important; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,7 +52,6 @@ a {
   text-decoration: none; }
 
 .current {
-  border-left: solid 2px #ffbf00;
   padding-left: .5rem; }
 
 img {
@@ -45,7 +69,7 @@ img {
 .small-line {
   width: 100px;
   height: 2px;
-  background: #ffbf00; }
+  background: #ff3d67; }
 
 body {
   background: #ddd;
@@ -71,8 +95,10 @@ body {
 
 .section-a {
   overflow-x: hidden;
-  background: url("../img/preview.jpg") no-repeat center center/cover;
+  background: url("../img/fuji.jpg") no-repeat center center/cover;
   position: relative;
+  color: #333;
+  height: 100svh;
   top: 0;
   left: 0;
   width: 100%;
@@ -84,8 +110,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #333;
-    opacity: .8; }
+    background-color: #000;
+    opacity: .2; }
   .section-a .navbar {
     display: flex;
     align-items: center;
@@ -116,32 +142,20 @@ body {
       position: relative; }
       .section-a .navbar #ul a {
         font-size: 18px;
-        color: #fff; }
+        color: #333; }
     .section-a .navbar #logo {
-      font-size: 22px;
-      padding-left: .5rem;
-      color: #ffbf00;
-      transform: translateX(-200px);
-      transition: transform 1s;
-      animation: logo 1s linear forwards; }
-
-@keyframes logo {
-  to {
-    transform: translateX(0px); } }
-
-@keyframes ul {
-  to {
-    transform: translateX(-10px); } }
+      width: 100px;
+      height: auto; }
   .section-a #a-title {
-    color: #fff;
+    color: #333;
     position: relative;
     top: 18rem; }
   .section-a #a-paragraph {
-    color: #fff;
+    color: #333;
     position: relative;
     top: 19rem; }
   .section-a #icon {
-    color: #ffbf00;
+    color: #ff3d67;
     position: relative;
     top: 25rem;
     animation: down 1s 3s forwards;
@@ -155,7 +169,7 @@ body {
 
 .section-b #mentor-words {
   font-size: 18px;
-  border-left: solid 3px #ffbf00;
+  border-left: solid 3px #ff3d67;
   margin: 1rem .5rem;
   line-height: 1.6;
   text-align: start;
@@ -216,9 +230,9 @@ body {
 .section-c .dots {
   width: 20px;
   height: 20px;
-  border: 2px solid #ffbf00;
+  border: 2px solid #ff3d67;
   border-radius: 50%;
-  background: #ffbf00;
+  background: #ff3d67;
   margin: 2rem 0rem .5rem 0rem;
   opacity: 0; }
 
@@ -227,7 +241,7 @@ body {
 
 .section-d #my-words {
   font-size: 18px;
-  border-right: solid 3px #ffbf00;
+  border-right: solid 3px #ff3d67;
   margin: 1rem .5rem;
   line-height: 1.6;
   text-align: end;
@@ -262,7 +276,7 @@ body {
 
 .section-e img {
   position: relative;
-  border-bottom: 2px solid #ffbf00; }
+  border-bottom: 2px solid #ff3d67; }
 
 .section-e #idea2 {
   display: none; }
@@ -381,7 +395,7 @@ body {
       .section-a .navbar #logo {
         font-size: 40px;
         padding-left: 3rem;
-        color: #ffbf00;
+        color: #ff3d67;
         transform: translateX(-200px);
         transition: transform 1s;
         animation: logo 1s linear forwards; }
@@ -401,7 +415,7 @@ body {
       position: relative;
       top: 19rem; }
     .section-a #icon {
-      color: #ffbf00;
+      color: #ff3d67;
       position: relative;
       top: 32rem;
       animation: down 1s 3s forwards;
@@ -414,7 +428,7 @@ body {
       visibility: hidden; }
   .section-b #mentor-words {
     font-size: 23px;
-    border-left: solid 3px #ffbf00;
+    border-left: solid 3px #ff3d67;
     margin: 1rem .5rem;
     line-height: 1.6;
     text-align: start;
@@ -443,7 +457,7 @@ body {
   .section-b .corners {
     width: 100px;
     height: 4px;
-    background: #ffbf00;
+    background: #ff3d67;
     position: relative; }
   .section-b #l-u {
     height: 100px;
@@ -500,9 +514,9 @@ body {
     .section-c .dots {
       width: 20px;
       height: 20px;
-      border: 2px solid #ffbf00;
+      border: 2px solid #ff3d67;
       border-radius: 50%;
-      background: #ffbf00;
+      background: #ff3d67;
       margin: 2rem 0rem .5rem 0rem;
       opacity: 0; }
     .section-c #dot1 {
@@ -514,7 +528,7 @@ body {
       justify-content: space-around; }
   .section-d #my-words {
     font-size: 23px;
-    border-right: solid 3px #ffbf00;
+    border-right: solid 3px #ff3d67;
     margin-top: 3rem;
     line-height: 1.6;
     text-align: end;
