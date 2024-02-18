@@ -197,35 +197,45 @@ body {
   width: 100vw;
   z-index: -1; }
   .section-help-for-others .wrap {
-    height: 100%;
-    width: 100%;
     position: relative;
     top: 0;
     left: 0;
-    z-index: -1; }
-    .section-help-for-others .wrap .sakura-container {
+    height: 100%;
+    width: 100%; }
+    .section-help-for-others .wrap .sakura-flower {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-      .section-help-for-others .wrap .sakura-container .sakura-flower {
-        position: absolute;
-        width: 50px;
-        height: auto;
-        top: -15%;
-        left: 0;
-        transition: transform 2s 0.4s;
-        transform: translate(1000%, 500%) rotate(720deg); }
-        .section-help-for-others .wrap .sakura-container .sakura-flower #sakura2 {
-          top: -15%;
-          left: 40%;
-          transform: translate(-500%, 500%) rotate(720deg); }
-        .section-help-for-others .wrap .sakura-container .sakura-flower #sakura3 {
-          top: -15%;
-          left: 50%;
-          transform: translate(800%, 500%) rotate(720deg);
-          transition: all 2s 0.2s; }
+      width: 50px;
+      height: auto; }
+    .section-help-for-others .wrap #sakura-1 {
+      top: -15%;
+      left: 5%;
+      transition: all 2s 0.1s; }
+    .section-help-for-others .wrap #sakura-2 {
+      top: -15%;
+      left: 45%;
+      transition: all 2s 0.2s; }
+    .section-help-for-others .wrap #sakura-3 {
+      top: -15%;
+      left: 85%;
+      transition: all 2s 0.3s; }
+    .section-help-for-others .wrap .sakura-1-animation {
+      animation: sakura1 20s 0.1 ease-out forwards; }
+    .section-help-for-others .wrap .sakura-2-animation {
+      animation: sakura2 20s 0.2 ease-out forwards; }
+    .section-help-for-others .wrap .sakura-3-animation {
+      animation: sakura3 20s 0.3 ease-out forwards; }
+
+@keyframes sakura1 {
+  to {
+    transform: translate(9000%, 10000%) rotate(7200deg); } }
+
+@keyframes sakura2 {
+  to {
+    transform: translate(-3000%, 10000%) rotate(7200deg); } }
+
+@keyframes sakura3 {
+  to {
+    transform: translate(-10000%, 8000%) rotate(7200deg); } }
     .section-help-for-others .wrap .heading {
       position: relative;
       top: 10%; }
