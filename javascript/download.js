@@ -9,7 +9,7 @@ function downloadFile() {
     a.href = URL.createObjectURL(fileData);
   
     // Set the download attribute with the desired file name
-    a.download = 'example.txt';
+    a.download = 'useful_stuff.pdf';
   
     // Append the anchor element to the body
     document.body.appendChild(a);
