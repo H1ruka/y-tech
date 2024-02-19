@@ -246,15 +246,14 @@ body {
     .section-help-for-others .wrap .source-buttons {
       position: relative;
       top: 25%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
       margin: 0rem 1rem; }
-      .section-help-for-others .wrap .source-buttons a {
+      .section-help-for-others .wrap .source-buttons button {
         padding: 1rem 1.5rem;
         border: 1px solid #333;
         border-radius: 10px;
