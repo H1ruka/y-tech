@@ -193,7 +193,7 @@ body {
     transform: translate(0px, 0px); } }
 
 .section-help-for-others {
-  height: 50vh;
+  height: 60vh;
   width: 100vw;
   z-index: -1; }
   .section-help-for-others .wrap {
@@ -201,7 +201,8 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     .section-help-for-others .wrap .sakura-flower {
       position: absolute;
       width: 50px;
@@ -245,21 +246,26 @@ body {
     .section-help-for-others .wrap .source-buttons {
       position: relative;
       top: 25%;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
       gap: 1rem;
-      margin: 0rem 2rem; }
+      margin: 0rem 1rem; }
       .section-help-for-others .wrap .source-buttons a {
         padding: 1rem 1.5rem;
         border: 1px solid #333;
         border-radius: 10px;
         background-color: #f4f4f4;
         z-index: 1;
-        color: #333; }
-      .section-help-for-others .wrap .source-buttons p {
-        color: #555; }
+        color: #333;
+        width: 100%;
+        text-align: center; }
+    .section-help-for-others .wrap .p {
+      color: #555;
+      top: 50%; }
 
 .section-about-us {
   overflow-x: hidden;
