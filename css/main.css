@@ -8,11 +8,16 @@
   /* Use the actual font name */
   src: url("../hirosaki/Hirosaki-Regular.ttf") format("opentype"); }
 
+@font-face {
+  font-family: 'Taylor';
+  /* Use the actual font name */
+  src: url("../taylor/TaylorSans-Light.ttf") format("opentype"); }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Dosis', sans-serif; }
+  font-family: 'Taylor', sans-serif; }
 
 .wrap {
   max-width: 425px;
@@ -84,6 +89,10 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh; }
+
+.taylor {
+  font-family: 'Taylor';
+  text-align: center !important; }
 
 .section-a {
   overflow-x: hidden;
@@ -246,14 +255,15 @@ body {
     .section-help-for-others .wrap .source-buttons {
       position: relative;
       top: 25%;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       flex-direction: row;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
       margin: 0rem 1rem; }
-      .section-help-for-others .wrap .source-buttons button {
+      .section-help-for-others .wrap .source-buttons a, .section-help-for-others .wrap .source-buttons button {
         padding: 1rem 1.5rem;
         border: 1px solid #333;
         border-radius: 10px;
@@ -262,6 +272,8 @@ body {
         color: #333;
         width: 100%;
         text-align: center; }
+      .section-help-for-others .wrap .source-buttons button {
+        grid-column: span 2; }
     .section-help-for-others .wrap .p {
       color: #555;
       top: 50%; }
@@ -440,7 +452,7 @@ body {
 
 .section-our-aim {
   background: #ccc;
-  height: 50vh;
+  height: 60vh;
   width: 100vw; }
   .section-our-aim .wrap {
     position: relative;
